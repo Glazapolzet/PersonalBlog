@@ -13,21 +13,30 @@
         <div class="navigation_left_container">
             <svg id="user-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="logo"><path id="primary" d="M16.66,12.77A5.93,5.93,0,0,0,17.92,8,6,6,0,0,0,6,9a5.94,5.94,0,0,0,1.34,3.77,1,1,0,0,1-.28,1.45A7,7,0,0,0,4,20a1,1,0,0,0,1,1H19a1,1,0,0,0,1-1,7,7,0,0,0-3.06-5.78A1,1,0,0,1,16.66,12.77Z"></path></svg>
             <svg height="20" width="1">
-              <line x1="0" y1="0" x2="0" y2="20" style="stroke:rgb(255,255,255);stroke-width:2"/>
+              <line x1="0" y1="0" x2="0" y2="20"/>
             </svg>
             <a class="navigation_link mail">myaccount@mail.ru</a>
         </div>
-        <div class="navigation_right_container">
-            <a class="navigation_link">News</a>
-            <a class="navigation_link">Archive</a>
-            <a class="navigation_link">Tags</a>
-            <a class="navigation_link">Contacts</a>
-            <button type="button" id="buttonSwitchTheme" class="button switch_color_theme">Switch theme</button>
-        </div>
+        <ul class="navigation_right_container">
+            <li><a class="navigation_link">News</a></li>
+            <li><a class="navigation_link">Archive</a></li>
+            <li class="tags">
+                <a class="navigation_link">Tags</a>
+                <ul class="bar">
+                    <li>#adsda</li>
+                    <li>#jfkfkf</li>
+                    <li>#jdfslf</li>
+                    <li>#wewqie</li>
+                    <li>#jdadna</li>
+                </ul>
+            </li>
+            <li><a class="navigation_link">Contacts</a></li>
+            <li><button type="button" id="buttonSwitchTheme" class="button switch_color_theme">Switch theme</button></li>
+        </ul>
     </header>
     <section class="content">
         <div class="top_content_container">
-            <div class="content_card">
+            <div class="content_card dark">
                 <p class="content_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
             <div class="photo_section">
@@ -48,10 +57,10 @@
             <p class="background_text">Big capybaras are back in town</p>
         </div>
         <div class="bottom_content_container">
-            <div class="content_card feed">
+            <div class="content_card feed dark">
                 <p class="content_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
-            <div class="content_card feed">
+            <div class="content_card feed dark">
                 <p class="content_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
             <div>
@@ -72,7 +81,7 @@
             </svg>
         </div>
         <div class="footer_right">
-            <p>All rights reserved 2022</p>
+            <p class="navigation_link">All rights reserved 2022</p>
         </div>
     </footer>
     <script src="scripts.js"></script>

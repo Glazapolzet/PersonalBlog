@@ -3,6 +3,13 @@ function switchTheme() {
     let element = document.getElementById('body');
     element.classList.toggle("light-mode");
     element.classList.toggle("dark-mode");
+    let contentCard = document.querySelectorAll('.content_card');
+    console.log(contentCard);
+    contentCard.forEach(card => {
+        card.classList.toggle("light");
+        card.classList.toggle("dark");
+    });
+
 }
 buttonSwitchTheme.addEventListener('click', switchTheme);
 
